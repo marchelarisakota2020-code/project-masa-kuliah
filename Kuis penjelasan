@@ -1,0 +1,54 @@
+// variabel untuk menyimpan jawaban user (Y/N)
+String jwb = "";
+
+// variabel untuk menyimpan nama mahasiswa
+String nama = "";
+
+// variabel untuk menyimpan NIM mahasiswa
+String nim = "";
+
+// variabel untuk menghitung jumlah mahasiswa
+int jumlah = 0;
+
+
+// perulangan akan berjalan selama jawaban BUKAN "Y"
+while (!jwb.equalsIgnoreCase("Y")) {
+
+    // membuat Scanner untuk input
+    Scanner Scanner = new Scanner(System.in);
+
+    // menambah jumlah mahasiswa setiap ada yang datang
+    jumlah++;
+
+    // menampilkan mahasiswa ke berapa
+    System.out.println("Mahasiswa ke-" + jumlah + " Dilayani ");
+
+    // meminta input nama
+    System.out.println("Masukkan Nama :");
+    nama = Scanner.nextLine();
+
+    // meminta input NIM
+    System.out.println("Masukan NIM :");
+    nim = Scanner.nextLine();
+
+
+    // pengecekan batas maksimal 7 mahasiswa
+    if (jumlah == 7) {
+        System.out.println("Mahasiswa sudah dipenuhi");
+        break; // menghentikan perulangan
+    }
+
+    // menanyakan apakah masih ada mahasiswa
+    System.out.println("Masih ada mahasiswa ? (Y/N) :");
+    jwb = Scanner.nextLine();
+
+    // kondisi ini tidak melakukan apa-apa (boleh dihapus)
+    if (!jwb.equalsIgnoreCase("N")) {
+    }
+}
+
+// menampilkan bahwa sesi selesai
+System.out.println("Sesi selesai");
+
+// menampilkan total mahasiswa yang dilayani
+System.out.println("Total mahasiswa: " + jumlah);
