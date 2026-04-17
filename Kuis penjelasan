@@ -32,13 +32,14 @@ while (!jwb.equalsIgnoreCase("Y")) {
     nim = Scanner.nextLine();
 
 
-    // pengecekan batas maksimal 7 mahasiswa
+    // pengecekan batas maksimal 7 mahasiswa 
     if (jumlah == 7) {
         System.out.println("Mahasiswa sudah dipenuhi");
-        break; // menghentikan perulangan
+        break; /Perulangan langsung dihentikan dengan break
     }
 
-    // menanyakan apakah masih ada mahasiswa
+    // menanyakan apakah masih ada mahasiswa Y → berhenti
+    N → lanjut input mahasiswa berikutnya
     System.out.println("Masih ada mahasiswa ? (Y/N) :");
     jwb = Scanner.nextLine();
 
@@ -47,8 +48,7 @@ while (!jwb.equalsIgnoreCase("Y")) {
     }
 }
 
-// menampilkan bahwa sesi selesai
+Program menampilkan bahwa sesi telah selesai
+Menampilkan total mahasiswa yang dilayani
 System.out.println("Sesi selesai");
-
-// menampilkan total mahasiswa yang dilayani
 System.out.println("Total mahasiswa: " + jumlah);
