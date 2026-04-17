@@ -1,0 +1,34 @@
+ public static void main(String[] args) {
+
+        /*
+        konsultasi Akademik
+        Dosen membuka sesi konsultasi untuk maksimal 7 mahasiswa. setiap mahasiswa yang datang
+        akan dilayani dan dihitung.Jika tidak ada mahasiswa lagi yang datang ,sesi dihentikan 
+        walaupun kuata belum penuh.
+        */
+        // dEKLARASI VARIABEL YANG DIPAKAI
+        int jumlah=0;
+        String jwb="";
+        Scanner Scanner = new Scanner(System.in);
+
+        while(!jwb.equalsIgnoreCase("Y")) {
+
+            jumlah++;
+
+            System.out.println("Mahasiswa ke-" + jumlah + " dilayani ");
+            
+            if (jumlah == 7) {
+            System.out.println("Mahasiswa sudah dipenuhi");
+                break;
+            }
+               
+            System.out.println("Masih ada mahasiswa ? (Y/N) :");
+            jwb = Scanner.nextLine();
+            if(!jwb.equalsIgnoreCase("N")){
+
+            }      
+        
+        }
+            System.out.println("Sesi selesai");
+            System.out.println("Total mahasiswa: " + jumlah);
+    }
