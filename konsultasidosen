@@ -7,28 +7,31 @@
         walaupun kuata belum penuh.
         */
         // dEKLARASI VARIABEL YANG DIPAKAI
-        int jumlah=0;
-        String jwb="";
-        Scanner Scanner = new Scanner(System.in);
+      String jwb ="";
+        String nama ="";
+        String nim="";
+        int jumlah =0;
 
         while(!jwb.equalsIgnoreCase("Y")) {
-
+            Scanner Scanner = new Scanner(System.in);
             jumlah++;
+            System.out.println("Mahasiswa ke-" + jumlah + " Dilayani " );
+            System.out.println("Masukkan Nama :");
+            nama = Scanner.nextLine();
+            System.out.println("Masukan NIM :");
+            nim = Scanner.nextLine();
 
-            System.out.println("Mahasiswa ke-" + jumlah + " dilayani ");
             
             if (jumlah == 7) {
             System.out.println("Mahasiswa sudah dipenuhi");
                 break;
-            }
-               
+            }   
             System.out.println("Masih ada mahasiswa ? (Y/N) :");
             jwb = Scanner.nextLine();
             if(!jwb.equalsIgnoreCase("N")){
-
             }      
         
         }
             System.out.println("Sesi selesai");
             System.out.println("Total mahasiswa: " + jumlah);
-    }
+    
