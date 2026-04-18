@@ -60,3 +60,11 @@ Program menampilkan bahwa sesi telah selesai
 Menampilkan total mahasiswa yang dilayani
 System.out.println("Sesi selesai");
 System.out.println("Total mahasiswa: " + jumlah);
+
+Jadi, dapat disimpulkan bahwa program ini berjalan 
+menggunakan perulangan 
+dan percabangan untuk mengatur alur input mahasiswa, 
+serta memiliki 
+batas maksimal agar proses tetap terkontrol.
+
+Sekian penjelasan dari saya, terima kasih.
