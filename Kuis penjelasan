@@ -20,7 +20,7 @@ while (!jwb.equalsIgnoreCase("Y")) {
     // menambah jumlah mahasiswa setiap ada yang datang
     jumlah++;
 
-    // menampilkan mahasiswa ke berapa
+    // menampilkan mahasiswa ke 1-7 yang akan di layani
     System.out.println("Mahasiswa ke-" + jumlah + " Dilayani ");
 
     // meminta input nama
@@ -38,12 +38,12 @@ while (!jwb.equalsIgnoreCase("Y")) {
         break; /Perulangan langsung dihentikan dengan break
     }
 
-    // menanyakan apakah masih ada mahasiswa Y → berhenti
-    N → lanjut input mahasiswa berikutnya
+    // menanyakan apakah masih ada mahasiswa jika tekan Y maka otomatis berhenti sedangkkan
+    N otomatis masih lanjut input mahasiswa yang berikutnya
     System.out.println("Masih ada mahasiswa ? (Y/N) :");
     jwb = Scanner.nextLine();
 
-    // kondisi ini tidak melakukan apa-apa (boleh dihapus)
+    // sata akan membuat jika jawabannya N maka otomatis lanjut input mahasiswa yang selanjutnya
     if (!jwb.equalsIgnoreCase("N")) {
     }
 }
