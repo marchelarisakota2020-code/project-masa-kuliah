@@ -1,3 +1,11 @@
+Jadi pada coding yang saya buat ini, program digunakan
+untuk mencatat mahasiswa yang
+datang dengan cara input nama dan NIM. 
+Program berjalan secara berulang menggunakan while, 
+dan akan terus berjalan 
+sampai pengguna memilih berhenti 
+atau jumlah mahasiswa sudah mencapai batas maksimal, 
+yaitu 7 orang.
 // variabel untuk menyimpan jawaban user (Y/N)
 String jwb = "";
 
