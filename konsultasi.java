@@ -1,28 +1,47 @@
 import java.util.Scanner;
 
 public class konsultasi {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+     public static void main(String[] args) {
 
-        int jumlah = 0;
-        String jawab = "y";
+        /*
+        konsultasi Akademik
+        Dosen membuka sesi konsultasi untuk maksimal 7 mahasiswa. setiap mahasiswa yang datang
+        akan dilayani dan dihitung.Jika tidak ada mahasiswa lagi yang datang ,sesi dihentikan 
+        walaupun kuata belum penuh.
+        */
+        // Deklarasi variabel
+        String jwb="";
+        String nama="";
+        String nim="";
+        int jumlah=0;
+        Scanner Scanner = new Scanner(System.in);
 
-        while (jawab.equalsIgnoreCase("y") && jumlah < 7) {
+
+        while (!jwb.equalsIgnoreCase("Y")) {
             jumlah++;
+            System.out.println("Mahasiswa ke-" + jumlah + " Dilayani ");
+            System.out.println("Masukkan Nama Mahasiswa :");
+            nama = Scanner.nextLine();
+            System.out.println("Masukkan NIM Mahasiswa :");
+            nim= Scanner.nextLine();
 
-            System.out.println("Mahasiswa ke-" + jumlah + " dilayani");
-
-            if (jumlah == 7) {
-                System.out.println("Kuota sudah penuh (7 mahasiswa)");
+            if(jumlah == 7) {
+                System.out.println("Mahasiswa sudah penuh");
                 break;
             }
+            System.out.println("Masih ada mahasiswa ? (Y/N)");
+            jwb = Scanner.nextLine();
 
-            System.out.print("Masih ada mahasiswa? (y/n): ");
-            jawab = input.next();
+            if(!jwb.equalsIgnoreCase("N")) {
+
+            }
+            
         }
+            System.out.println("Sesi selesai");
+            System.out.println("Total mahasiswa: " + jumlah);
 
-        System.out.println("Sesi selesai");
-        System.out.println("Total mahasiswa: " + jumlah);
+            Scanner.close();
+        
+    
     }
 }
-
