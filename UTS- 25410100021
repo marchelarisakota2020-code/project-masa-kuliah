@@ -9,7 +9,7 @@ public static void main(String[] args) {
             System.out.print("Masukkan jumlah data (minimal 5): ");
             n = input.nextInt();
             if (n < 5) {
-                System.out.println("Jumlah data harus minimal 5!");
+                System.out.println("Jumlah data harus minimal 5");
             }
         } while (n < 5);
 
@@ -33,7 +33,7 @@ public static void main(String[] args) {
         }
 
         System.out.println("\nNilai tertinggi adalah: " + max);
-        System.out.println("Terdapat pada indeks array ke: " + indeks);
+        System.out.println("indeks array ke: " + indeks);
 
         input.close();
 }
