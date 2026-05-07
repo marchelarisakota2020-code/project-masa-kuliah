@@ -1,0 +1,71 @@
+Selamat pagi teman-teman pekenalkan nama saya...
+Jadi pada coding yang saya buat ini, program digunakan
+untuk mencatat mahasiswa yang
+datang dengan cara input nama dan NIM. 
+Program berjalan secara berulang menggunakan while, 
+dan akan terus berjalan 
+sampai pengguna memilih berhenti 
+atau jumlah mahasiswa sudah mencapai batas maksimal, 
+yaitu 7 orang.
+// variabel untuk menyimpan jawaban user (Y/N)
+String jwb = "";
+
+// variabel untuk menyimpan nama mahasiswa
+String nama = "";
+
+// variabel untuk menyimpan NIM mahasiswa
+String nim = "";
+
+// variabel untuk menghitung jumlah mahasiswa
+int jumlah = 0;
+
+
+// perulangan akan berjalan selama jawaban BUKAN "Y"
+while (!jwb.equalsIgnoreCase("Y")) {
+
+    // membuat Scanner untuk input
+    Scanner Scanner = new Scanner(System.in);
+
+    // menambah jumlah mahasiswa setiap ada yang datang
+    jumlah++;
+
+    // menampilkan mahasiswa ke 1-7 yang akan di layani
+    System.out.println("Mahasiswa ke-" + jumlah + " Dilayani ");
+
+    // meminta input nama
+    System.out.println("Masukkan Nama :");
+    nama = Scanner.nextLine();
+
+    // meminta input NIM
+    System.out.println("Masukan NIM :");
+    nim = Scanner.nextLine();
+
+
+    // pengecekan batas maksimal 7 mahasiswa 
+    if (jumlah == 7) {
+        System.out.println("Mahasiswa sudah dipenuhi");
+        break; /Perulangan langsung dihentikan dengan break
+    }
+
+    // menanyakan apakah masih ada mahasiswa jika tekan Y maka otomatis berhenti sedangkkan
+    N otomatis masih lanjut input mahasiswa yang berikutnya
+    System.out.println("Masih ada mahasiswa ? (Y/N) :");
+    jwb = Scanner.nextLine();
+
+    // sata akan membuat jika jawabannya N maka otomatis lanjut input mahasiswa yang selanjutnya
+    if (!jwb.equalsIgnoreCase("N")) {
+    }
+}
+
+Program menampilkan bahwa sesi telah selesai
+Menampilkan total mahasiswa yang dilayani
+System.out.println("Sesi selesai");
+System.out.println("Total mahasiswa: " + jumlah);
+
+Jadi, dapat disimpulkan bahwa program ini berjalan 
+menggunakan perulangan 
+dan percabangan untuk mengatur alur input mahasiswa, 
+serta memiliki 
+batas maksimal agar proses tetap terkontrol.
+
+Sekian penjelasan dari saya, terima kasih.
