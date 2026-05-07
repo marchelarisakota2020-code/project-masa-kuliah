@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Uts {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+       int n;
+        do {
+            System.out.print("Masukkan jumlah data (minimal 5): ");
+            n = input.nextInt();
+            if (n < 5) {
+                System.out.println("Jumlah data harus minimal 5!");
+            }
+        } while (n < 5);
+
+        int[] nilai = new int[n];
+
+     
+        for (int i = 0; i < n; i++) {
+            System.out.print("Masukkan nilai ke-" + (i + 1) + ": ");
+            nilai[i] = input.nextInt();
+        }
+
+        int max = nilai[0];
+        int indeks = 0;
+
+     
+        for (int i = 1; i < n; i++) {
+            if (nilai[i] > max) { 
+                max = nilai[i];
+                indeks = i;
+            }
+        }
+
+        System.out.println("\nNilai tertinggi adalah: " + max);
+        System.out.println("Terdapat pada indeks array ke: " + indeks);
+
+        input.close();
+
+        
+    }
+
+    
+}
